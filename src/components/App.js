@@ -1,21 +1,31 @@
 import React, { Component } from 'react';
-import logo from '../images/logo.svg';
 import '../styles/App.css';
-import Header from './Header';
-import TopMenu from './TopMenu';
+import Grid from '@material-ui/core/Grid'
+import Header from './Header'
+import TopMenu from './TopMenu'
+import OpeningSoon from './OpeningSoon';
 
 class App extends Component {
   render() {
-    return (
-      <div className="App">
-        <div className="grid-container">
-          <div className="grid-x grid-padding-x align-center">
-            <Header />  
-          </div>
-          <TopMenu />
-        </div>
-      </div>
-    );
+    return <div className="App">
+        <Grid container>
+          <Grid item xs={12}>
+            <Grid container justify="center">
+              <Header />
+            </Grid>
+            <Grid item xs={12}>
+              <Grid container spacing={8} justify="center">
+                <TopMenu />
+              </Grid>
+            </Grid>
+            <Grid item xs={12}>
+              <Grid container justify="center">
+                <OpeningSoon />
+              </Grid>
+            </Grid>
+          </Grid>
+        </Grid>
+      </div>;
   }
 }
 
