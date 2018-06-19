@@ -8,7 +8,7 @@
 }
 
 .next-logo {
-  height: 300px;
+  height: 275px;
   width: 375px;
 }
 
@@ -17,7 +17,10 @@
   color: #4a4a4a;
   text-transform: uppercase;
 }
-
+.top-menu {
+  padding-top: 20px;
+}
 .opening-soon {
   padding-top: 25px;
+  padding-bottom: 25px;
 }

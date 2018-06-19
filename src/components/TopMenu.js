@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Tabs from '@material-ui/core/Tabs'
 import Tab from '@material-ui/core/Tab'
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
+import { Link } from 'react-router-dom';
+
 
 const theme = createMuiTheme({
   palette: { 
@@ -14,19 +16,25 @@ const theme = createMuiTheme({
 export default class TopMenu extends Component {
     state = {
       value: 0,
-    }
+    };
+
+    handleChange = (event, value) => {
+      this.setState({ value });
+    };
 
     render(){
         return <div className="top-menu">
           <MuiThemeProvider theme={theme}>
             <Tabs
               value={this.state.value}
+              onChange={this.handleChange}
               indicatorColor="primary"
+              index={this.state.value}
             >
-              <Tab label="About" />
-              <Tab label="Our Program" />
-              <Tab label="Location" />
-              <Tab label="Contact" />
+              <Tab label="About" component={Link} to='/About'/>
+              <Tab label="Our Program" component={Link} to='/Program' />
+              <Tab label="Location" component={Link} to='/Location'/>
+              <Tab label="Contact" component={Link} to='/Contact'/>
             </Tabs>
           </MuiThemeProvider>
           </div>;
