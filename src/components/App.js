@@ -5,6 +5,7 @@ import Header from './Header'
 import TopMenu from './TopMenu'
 import OpeningSoon from './OpeningSoon';
 import About from './About'
+import SignUp from './SignUp'
 import { 
   BrowserRouter as Router,
   Route
@@ -14,7 +15,7 @@ class App extends Component {
   render() {
     return <Router>
         <div className="App">
-          <Grid container>
+          <Grid container justify="center">
             <Grid item xs={12}>
               <Grid container justify="center">
                 <Header />
@@ -22,6 +23,11 @@ class App extends Component {
               <Grid item xs={12}>
                 <Grid container spacing={8} justify="center">
                   <TopMenu />
+                </Grid>
+              </Grid>
+              <Grid item xs={12}>
+                <Grid container spacing={8} justify="center">
+                  <SignUp/>
                 </Grid>
               </Grid>
               <Grid item xs={12}>

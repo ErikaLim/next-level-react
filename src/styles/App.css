@@ -1,5 +1,6 @@
 .App {
-  font-family: 'Quicksand', sans-serif;  
+  font-family: 'Quicksand', sans-serif; 
+  justify-content: center; 
 }
 
 @keyframes App-logo-spin {
@@ -23,4 +24,16 @@
 .opening-soon {
   padding-top: 25px;
   padding-bottom: 25px;
+}
+
+.title {
+  font-family: 'Merriweather', serif;
+  color: #4a4a4a;
+}
+
+.sign-up {
+  margin-top: 25px;
+  background-color: #01ab99;
+  width: 100%; 
+  padding: 25px;
 }
