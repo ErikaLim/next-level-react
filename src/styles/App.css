@@ -14,9 +14,10 @@
 }
 
 .MuiTab-label-111{
-  font-family: 'Merriweather', serif;
+  font-family: 'Quicksand', sans-serif;
   color: #4a4a4a;
   text-transform: uppercase;
+  font-weight: bolder;
 }
 .top-menu {
   padding-top: 20px;
@@ -27,8 +28,9 @@
 }
 
 .title {
-  font-family: 'Merriweather', serif;
+  font-family: 'Quicksand', sans-serif;
   color: #4a4a4a;
+  font-weight: bolder;
 }
 
 .sign-up {
@@ -36,4 +38,10 @@
   background-color: #01ab99;
   width: 100%; 
   padding: 25px;
+}
+
+.sign-up-text {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.25em;
 }

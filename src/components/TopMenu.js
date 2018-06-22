@@ -31,10 +31,10 @@ export default class TopMenu extends Component {
               indicatorColor="primary"
               index={this.state.value}
             >
+              <Tab label="Home" component={Link} to='/'/>
               <Tab label="About" component={Link} to='/About'/>
               <Tab label="Our Program" component={Link} to='/Program' />
               <Tab label="Location" component={Link} to='/Location'/>
-              <Tab label="Contact" component={Link} to='/Contact'/>
             </Tabs>
           </MuiThemeProvider>
           </div>;

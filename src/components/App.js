@@ -6,6 +6,7 @@ import TopMenu from './TopMenu'
 import OpeningSoon from './OpeningSoon';
 import About from './About'
 import SignUp from './SignUp'
+import WaitList from './WaitList'
 import { 
   BrowserRouter as Router,
   Route
@@ -34,6 +35,7 @@ class App extends Component {
                 <Grid container justify="center">
                   <Route exact path="/" component={OpeningSoon} />
                   <Route exact path="/About" component={About} />
+                  <Route exact path="/Contact" component={WaitList}/>
                 </Grid>
               </Grid>
             </Grid>
