@@ -3,7 +3,7 @@ import '../styles/App.css';
 import Grid from '@material-ui/core/Grid'
 import Header from './Header'
 import TopMenu from './TopMenu'
-import OpeningSoon from './OpeningSoon';
+import Carousel from './Carousel';
 import About from './About'
 import SignUp from './SignUp'
 import WaitList from './WaitList'
@@ -33,7 +33,7 @@ class App extends Component {
               </Grid>
               <Grid item xs={12}>
                 <Grid container justify="center">
-                  <Route exact path="/" component={OpeningSoon} />
+                  <Route exact path="/" component={Carousel} />
                   <Route exact path="/About" component={About} />
                   <Route exact path="/Contact" component={WaitList}/>
                 </Grid>

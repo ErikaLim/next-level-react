@@ -1,6 +1,6 @@
 .App {
   font-family: 'Quicksand', sans-serif; 
-  justify-content: center; 
+  justify-content: center;
 }
 
 @keyframes App-logo-spin {
@@ -22,9 +22,12 @@
 .top-menu {
   padding-top: 20px;
 }
-.opening-soon {
+.carousel {
   padding-top: 25px;
   padding-bottom: 25px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
 }
 
 .title {
@@ -44,4 +47,25 @@
   font-family: 'Roboto Condensed', sans-serif;
   text-transform: uppercase;
   font-size: 1.25em;
+}
+
+.image-slide {
+ transition: background-image .3s ease-in-out;
+  height: 500px;
+  width: 750px;
+}
+
+.slide-arrow {
+  cursor: pointer;
+  font-size: 2rem;
+  position: fixed;
+
+}
+
+.slide-arrow.right {
+  right: 10rem;
+}
+
+.slide-arrow.left {
+  left: 10rem;
 }
